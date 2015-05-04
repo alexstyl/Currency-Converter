@@ -1,0 +1,31 @@
+<resources>
+
+
+    <!--<style name="ButtonStyle">-->
+        <!--<item name="android:textAppearance">@android:style/TextAppearance.Large</item>-->
+        <!--<item name="android:background">@drawable/accented_ripple</item>-->
+    <!--</style>-->
+
+    <!--<style name="CurrencyButtonStyle">-->
+        <!--<item name="android:background">@drawable/accented_ripple</item>-->
+        <!--<item name="android:textAppearance">@android:style/TextAppearance.Large</item>-->
+        <!--<item name="android:textSize">36sp</item>-->
+    <!--</style>-->
+
+    <style name="ButtonStyle">
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+        <item name="android:background">@drawable/accented_ripple</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+    <style name="CurrencyStyle.Button.Borderless" parent="CurrencyStyle.Button">
+        <item name="android:background">@drawable/accented_ripple</item>
+    </style>
+
+
+    <style name="ButtonStyle.Special" parent="ButtonStyle">
+        <item name="android:background">@drawable/special_ripple</item>
+    </style>
+
+</resources>

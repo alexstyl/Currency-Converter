@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+
+    <style name="ActivityLog">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Small</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+        <item name="android:background">@drawable/selectable_background</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="CurrencyStyle">
+        <item name="android:singleLine">true</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/default_text_color</item>
+    </style>
+
+
+    <style name="CurrencyStyle.Large" parent="CurrencyStyle">
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+    <style name="CurrencyStyle.Small" parent="CurrencyStyle">
+        <item name="android:textAppearance">@android:style/TextAppearance.Small</item>
+
+    </style>
+
+    <style name="CurrencyStyle.Button" parent="CurrencyStyle.Large"></style>
+
+    <style name="CurrencyStyle.Button.Borderless" parent="CurrencyStyle.Button">
+        <item name="android:background">@drawable/selectable_background</item>
+    </style>
+
+
+    <style name="HistoryLabel">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ButtonStyle.Special" parent="ButtonStyle">
+        <item name="android:background">@drawable/special_button_drawable</item>
+    </style>
+
+    <style name="CurrencySelection" parent="CurrencyStyle.Large">
+        <item name="android:textColor">@color/selected_currencies_color</item>
+    </style>
+
+    <style name="CurrencySelection.Small" parent="CurrencyStyle.Small">
+        <item name="android:singleLine">false</item>
+        <item name="android:textColor">@color/selected_currencies_color</item>
+    </style>
+
+
+</resources>

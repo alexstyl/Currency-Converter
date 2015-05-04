@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/HistoryLabel"
+    android:layout_width="match_parent"
+    tools:text="2£ = 3€"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/padding_tight"
+    android:paddingRight="@dimen/padding_tight"
+    tools:background="@color/deep_teal"
+    android:layout_height="?android:listPreferredItemHeight" />

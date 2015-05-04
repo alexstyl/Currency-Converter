@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Currency Converter</string>
+    <string name="log_activity_created">The activity has been created %s times</string>
+    <string name="log_activity_resumed">The activity has been resumed %s times</string>
+    <string name="history">History</string>
+    <string name="no_history_label">No value has been converted yet. Future conversions will appear here</string>
+    <string name="close">Close</string>
+    <string name="about_message_by">by Alexandros Stylianidis</string>
+    <string name="about_message_contact">contact me at alexstyl.dev@gmail.com</string>
+
+</resources>

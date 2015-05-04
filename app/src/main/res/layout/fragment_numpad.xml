@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/side_buttons"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:layout_width="@dimen/side_buttons_size"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            style="@style/ButtonStyle.Special"
+            android:id="@+id/btn_backspace"
+            android:src="@drawable/ic_hardware_keyboard_backspace"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+
+        <ImageButton
+            style="@style/ButtonStyle.Special"
+            android:id="@+id/btn_clear_all"
+            android:src="@drawable/ic_navigation_close"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+
+        <ImageButton
+
+            style="@style/ButtonStyle.Special"
+            android:id="@+id/btn_history"
+            android:src="@drawable/ic_action_history"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+
+
+    </LinearLayout>
+
+    <com.alexstyl.currency.ui.widget.CalculatorPadLayout
+        android:id="@+id/numpad_layout"
+        android:rowCount="4"
+        android:columnCount="3"
+        android:layout_toLeftOf="@id/side_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

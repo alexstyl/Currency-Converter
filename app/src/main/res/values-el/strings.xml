@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Συνάλλαγμα</string>
+    <string name="history">Ιστορικό</string>
+    <string name="log_activity_created">Αυτό το activity δημιουργήθηκε %s φορές</string>
+    <string name="log_activity_resumed">Αυτό το activity επαναφέρθηκε %s φορές</string>
+    <string name="no_history_label">Δεν έχει γίνει κάποια μετατροπή. Όλες οι μετατροπές θα εμφανιστούν εδώ.</string>
+    <string name="close">Κλείσιμο</string>
+    <string name="about_message_by">από τον Αλέξανδρο Στυλιανίδη</string>
+    <string name="about_message_contact">επικοινωνία στο: alexstyl.dev@gmail.com</string>
+</resources>

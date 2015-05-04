@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:layout_alignParentTop="true"
+        android:id="@+id/converter_frag"
+        android:tag="convertion_fragment"
+        android:layout_width="match_parent"
+        android:name="com.alexstyl.currency.ui.fragment.ConversionFragment"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_converter" />
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/activity_log"
+        android:layout_width="match_parent"
+        android:background="@android:color/black"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/about"
+            android:src="@drawable/ic_navigation_more_vert"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:layout_toLeftOf="@id/about"
+            android:singleLine="true"
+            android:layout_marginTop="2dp"
+            style="@style/ActivityLog"
+            android:id="@+id/activity_created_log"
+            android:textColor="@android:color/white"
+            tools:text="@string/log_activity_created"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_toLeftOf="@id/about"
+            android:singleLine="true"
+            android:layout_below="@id/activity_created_log"
+            style="@style/ActivityLog"
+            android:id="@+id/activity_resumed_log"
+            android:textColor="@android:color/white"
+            tools:text="@string/log_activity_resumed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <!--<include layout="@layout/layout_activity_log" />-->
+
+
+    <android.support.v4.widget.SlidingPaneLayout
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/converter_frag"
+        android:layout_above="@id/activity_log"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sliding_layout"
+        tools:context=".MainActivity">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:id="@+id/numpad"
+            android:name="com.alexstyl.currency.ui.fragment.NumPadFragment"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_numpad" />
+
+
+        <fragment
+            android:id="@+id/history_frag"
+            android:name="com.alexstyl.currency.ui.fragment.HistoryFragment"
+            android:layout_width="400dp"
+            android:layout_weight="1"
+            tools:background="@color/material_blue_grey_950"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_history" />
+    </android.support.v4.widget.SlidingPaneLayout>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.1"
+
+    defaultConfig {
+        applicationId "com.alexstyl.currency"
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+
+
+    signingConfigs {
+        release {
+//            storeFile file("D:\\Alex\\My Documents\\alexstyl.keystore")
+            storeFile file("/Users/alexstyl/android/alexstyl.keystore")
+            storePassword "d3veloping4FAN"
+            keyAlias "alexstylkey"
+            keyPassword "d3veloping4FAN"
+        }
+    }
+
+    buildTypes {
+
+
+        release {
+            buildConfigField "boolean", "IS_DEBUG", "false"
+            debuggable false
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    lintOptions{
+        abortOnError false
+    }
+}
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:21.0.3'
+}

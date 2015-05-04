@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_marginEnd="@dimen/padding_tight"
+        android:layout_marginRight="@dimen/padding_tight"
+        android:layout_marginTop="@dimen/currency_margin_top"
+        android:layout_toLeftOf="@+id/swap"
+        android:layout_toStartOf="@+id/swap"
+        android:id="@+id/from_layout"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/CurrencyStyle.Large"
+            android:id="@+id/cur1_edit_from"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:inputType="numberDecimal"
+            android:layout_width="0dp"
+            android:hint="0"
+            tools:text="48"
+            android:singleLine="true"
+            android:ellipsize="start"
+            android:paddingLeft="@dimen/padding_tight"
+            android:paddingRight="@dimen/padding_tight"
+            android:layout_height="match_parent" />
+
+        <Button
+            style="@style/CurrencyStyle.Button.Borderless"
+            android:id="@+id/cur1_button_from"
+            tools:text="£"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginEnd="@dimen/padding_tight"
+        android:layout_marginRight="@dimen/padding_tight"
+        android:layout_marginTop="@dimen/currency_margin_top"
+        android:layout_toStartOf="@id/swap"
+        android:layout_toLeftOf="@id/swap"
+        android:layout_below="@+id/from_layout"
+        android:orientation="horizontal"
+        android:id="@+id/to_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingLeft="@dimen/padding_tight"
+            android:ellipsize="start"
+            android:paddingRight="@dimen/padding_tight"
+            android:singleLine="true"
+            android:hint="0"
+            style="@style/CurrencyStyle.Large"
+            android:id="@+id/cur2_edit_from"
+            android:inputType="numberDecimal"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_width="0dp"
+            tools:text="1923871267890-421312312312312312312312322"
+            android:layout_height="match_parent" />
+
+        <Button
+            style="@style/CurrencyStyle.Button.Borderless"
+            android:id="@+id/cur2_button_from"
+            tools:text="£"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ImageButton
+        style="@style/CurrencyStyle.Button.Borderless"
+        android:layout_alignBottom="@id/to_layout"
+        android:layout_width="wrap_content"
+        android:id="@id/swap"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_action_swap_vert_circle"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>
